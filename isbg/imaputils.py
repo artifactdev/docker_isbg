@@ -322,7 +322,7 @@ class ImapSettings(object):
     def __init__(self):
         """Set Imap settings."""
         self.host = 'localhost'      #: IMAP host name or IP.
-        self.port = 143              #: IMAP port to connect.
+        self.port = 993              #: IMAP port to connect.
         self.user = ''               #: IMAP user name.
         self.passwd = None           #: Password for the IMAP user name.
         self.nossl = False           #: Not use ssl for IMAP connection.
