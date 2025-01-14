@@ -12,7 +12,7 @@ for i, confFile in ipairs( conftab ) do
 			server = config.server,
 			username = config.username,
 			password = config.password,
-			ssl = "ssl3"
+			ssl = "auto"
 		}
         if( os.getenv( "DETAILED_LOGGING" ) == "true" ) then verboseOption = " --verbose" else verboseOption = "" end
         if( confLoader.tableHasKey( config, "isGmail" ) and config.isGmail == "yes" ) then gmailOption = " --gmail" else gmailOption = "" end
