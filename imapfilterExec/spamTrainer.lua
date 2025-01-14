@@ -14,7 +14,7 @@ for i, confFile in ipairs( conftab ) do
 			server = config.server,
 			username = config.username,
 			password = config.password,
-			ssl = "ssl3"
+			ssl = "auto"
 		}
 		if ( ( not confLoader.tableHasKey( config, "spamHandling" ) ) or config.spamHandling == "yes" ) then
 			print( "Training Spam for "..confFile )
